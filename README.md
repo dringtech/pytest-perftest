@@ -79,10 +79,7 @@ These timings are appended to a list.
 # test_perf.py
 def test_example(record_timings):
 
-    def function_to_test(*args):
-        '''
-        The function must be able to receive at least one argument
-        '''
+    def function_to_test():
         ...body of function to test...
 
     # Run the function repeatedly
@@ -112,7 +109,7 @@ It's possible to change these if needed, which is useful if the test case comple
 # test_perf.py
 def test_example(record_timings):
 
-    def f(*args):
+    def f():
         ...body of function to test...
 
     # Run the function 100 times per repeat, and for 100 repeats
@@ -126,7 +123,7 @@ returns an object containing all the results of the execution.
 # test_perf.py
 def test_example(record_timings):
 
-    def f(*args):
+    def f():
         ...body of function to test...
 
     # Run the function 100 times per repeat, and for 100 repeats

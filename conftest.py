@@ -29,7 +29,7 @@ class PerformanceTimer:
             if not test_function_args == None:
                 args_generator = cycle(test_function_args)
             else:
-                args_generator = cycle([None])
+                args_generator = cycle([[]])
 
             timings = []
             function_results = []
